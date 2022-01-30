@@ -4,8 +4,33 @@
 import re
 
 """"
-This funtion read a file and return the content
+This script analizes the following content:
+
+ORIGIN      
+        1 malwmrllpl lallalwgpd paaafvnqhl cgshlvealy lvcgergffy tpktrreaed
+       61 lqvgqvelgg gpgagslqpl alegslqkrg iveqcctsic slyqlenycn
+//
+
+This content can be found here : https://www.ncbi.nlm.nih.gov/protein/AAA59172.1
+
+Note: This script automate the 99% of the work including read, write and slicing data.
+      To make this script fully atumate you need to scrabe content from the above link.
+
+Start Here:
+    To run this script, you need to create preproinsulin-seq.txt and copy and paste the content 
+    that start with ORIGIN and end wiht //
+
+What to expect from this script:
+    It will clean the content with removing ORIGIN, // and all the digits.
+    Next it will save the clean data in preproinsulin-seq-clean.txt
+    Next it will count the total characters of the content that is 110
+    After that, it will slice the date from the preproinsulin-seq-clean.txt 
+        based on the amino acids characters such as amino acide 1 to 24
+    Up next, it will save all the slices data in different files
+    Also it will count the amino acids total characters characters 
 """
+
+# This funtion read a file and return the content
 
 
 def readFile(file_name):
