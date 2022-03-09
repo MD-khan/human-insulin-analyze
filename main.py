@@ -30,7 +30,7 @@ What to expect from this script:
     Also it will count the amino acids total characters characters 
 """
 
-# This funtion read a file and return the content
+# This funtion read a file and return the content=
 
 
 def readFile(file_name):
